@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ header }}</h1>
+<p>Адрес: улица {{ address.0 }}, дом {{ address.1 }}, кв {{ address }}</p>
+<p>Пользователь: {{ user.name }}, возраст {{ user.age }}</p>
+<p>Знает языки програмирования : {{ langs.0 }}, {{ langs.1 }}</p>
+
+{% autoescape on %}
+{{ text }}
+{% endautoescape %}
+
+<p style="background: #000; color : #fff; font-size: 40px">My text</p>
+</body>
+</html>
